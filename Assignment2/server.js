@@ -1,8 +1,8 @@
 import express from "express";
-import routes from "./routes/routes.js";
-import connectDB from "./connection.js";
+import routes from "./routes/routes.js"; //imported routes
+import connectDB from "./connection.js"; //imported to cnnect DB
 
-const app = express();
+const app = express(); //called express
 const PORT = 5000;
 
 connectDB();

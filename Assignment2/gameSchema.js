@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//schema with validation
 const gameSchema = new mongoose.Schema({
   gameName: {
     type: String,
