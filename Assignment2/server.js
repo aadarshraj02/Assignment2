@@ -1,8 +1,11 @@
 import express from "express";
 import routes from "./routes/routes.js";
+import connectDB from "./connection.js";
 
 const app = express();
 const PORT = 5000;
+
+connectDB();
 
 //middleware to get log requests
 const logRequests = (req, res, next) => {
